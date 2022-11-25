@@ -66,6 +66,10 @@ export class Analyzer {
     }
 
     min() {
+        return this.sorted[0];
+    }
 
+    max() {
+        return this.sorted[this.sorted.length - 1];
     }
 }
