@@ -56,7 +56,7 @@ export class Analyzer {
         const len = this.sorted.length;
         let sum = 0;
         for (let i = 0; i < len; i++) {
-            sum = (this.sorted[i] - this.average()) ** 2;
+            sum += (this.sorted[i] - this.average()) ** 2;
         }
         return sum / len;
     }
